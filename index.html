@@ -406,28 +406,30 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="contact-form">
-                                <form action="#">
+                                <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-grp">
-                                                <input type="text" placeholder="Nombre *">
+                                                <input type="text" name="Nombre" placeholder="Nombre *">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-grp">
-                                                <input type="email" placeholder="Correo *">
+                                                <input type="email" name="Email" placeholder="Correo *">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-grp">
-                                                <input type="number" placeholder="Numero Telefono *">
+                                                <input type="text" name="Celular" placeholder="Numero de Teléfono *">
                                             </div>
                                         </div>
+					    
                                         <div class="col-md-12">
                                             <div class="form-grp">
-                                                <textarea placeholder="Cuentanos un poco acerca de tu empresa *"></textarea>
+                                                <textarea name="Mensaje" placeholder="Cuentanos un poco acerca de tu empresa *"></textarea>
                                             </div>
-                                        </div>
+                                        </div><br>
+					    <div data-netlify-recaptcha="true"></div><br>
                                     </div>
                                     <button type="submit">Enviar Mensaje</button>
                                 </form>
